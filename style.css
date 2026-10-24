@@ -17,6 +17,7 @@ body{
     background-position: center;
 
     position: relative;
+    margin-bottom: 5vh;
 }
 
 .nav-links{
@@ -95,3 +96,53 @@ body{
     margin: 8px;
 }
 
+.car-types{
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1%;
+
+    margin-bottom: 5vh;
+
+}
+
+.types{
+    height: 30vh;
+    width: 23vw;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0);
+    border-radius: 16px;
+    transition: .3s ease;    
+
+    position: relative;
+}
+
+.types img{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.sport-text,
+.ev-text,
+.supercar-text{
+
+    height: max-content;
+    width: 21vw;
+    color: white;
+    position: absolute;
+    top: 1.5vh;
+    left: 1vw;
+}
+
+.types img:hover{
+    filter: blur(2px) grayscale(50%);
+}
+
+.types:has(img:hover):hover{
+    border: 2px solid rgb(98, 98, 98);
+}
