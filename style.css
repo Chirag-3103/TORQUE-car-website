@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.navbar{
+    height: 100vh;
+    background-image: url(images/porsche-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.nav-links{
+    min-height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 5vw;
+
+    background-color: transparent;
+
+    position: absolute;
+    top:0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.245);
+    box-shadow: 0  15px 100px;
+}
+
+.bg-image{
+    height: 3vh;
+    width: 9vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.bg-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.menu{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    padding: .5% .9%;
+    border-radius: 8px;
+    transition: .2s ease;
+    border: 1.5px solid rgba(128, 128, 128, 0);
+}
+
+.menu:hover{
+    border: 1.5px solid rgba(128, 128, 128, 0.733);
+    background-color: rgba(128, 128, 128, 0.266);
+}
+
+.menu i{
+    padding-right: 1.5vw;
+}
+
+.country,
+.account{
+
+    font-size: 1.3rem;
+    margin-left: 0 .4vw;
+    color: white;
+
+    border: 1.5px solid rgba(128, 128, 128, 0);
+    transition: .2s ease;
+    border-radius: 50%;
+}
+
+.country:hover{
+    border: 1.5px solid rgba(128, 128, 128, 0.733);
+    background-color: rgba(128, 128, 128, 0.266);
+}
+
+.account:hover{
+    border: 1.5px solid rgba(128, 128, 128, 0.733);
+    background-color: rgba(128, 128, 128, 0.266);
+}
+
+.country i,
+.account i{
+    margin: 8px;
+}
+
