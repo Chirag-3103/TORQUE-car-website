@@ -168,10 +168,18 @@ body{
 
 .card{
     height: 60vh;
+    width: 95%;
 
-    border: 2px solid red;
+    border: 4px solid rgba(0, 0, 0, 0.392);
     border-radius: 25px;
     overflow: hidden;
+    transition: .3s ease;
+
+    position: relative;
+}
+
+.card:has(.card-pic:hover){
+    width: 100%;
 }
 
 .card-pic{
@@ -179,4 +187,148 @@ body{
     width: 100%;
 
     object-fit: cover;
+}
+
+.overlay-text-top{
+    width: 100%;
+    padding: 3vh 3vw 1vh 3vw;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(3px);
+
+    transform: scaleY(0);
+    background-color: rgba(0, 0, 0, 0.392);
+    color: transparent;
+    transition: .4s ease;
+}
+.card:has(.overlay-text-top:hover){
+    width: 100%;
+}
+
+.card:has(.overlay-text-bottom:hover){
+    width: 100%;
+}
+
+.overlay-text-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+
+    padding: 3vh 2vw 5vh 2vw;
+    transform: scaleY(0);
+    background-color: rgba(0, 0, 0, 0.392);
+    color: transparent;
+    transition: .4s ease;
+}
+
+.card:hover .overlay-text-top,
+.card:hover .overlay-text-bottom{
+    transform: scaleY(1);
+}
+
+.overlay-text-top h2,
+.overlay-text-bottom p{
+    transition: 2.1s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card:hover .overlay-text-top h2,
+.card:hover .overlay-text-bottom p{
+    color: white;
+}
+
+.performance{
+    height: 110vh;
+    background-image: url(images/bg-img2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    padding: 1vh 1vw;
+}
+
+.discover-text{
+    margin: 8vh 0 3vh 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 10vw;
+}
+
+.p-div1{
+    width: 30vw;
+    padding: 1.5vh 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.08rem;
+    word-spacing: 5px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.674);
+
+    position: absolute;
+    top: 22vh;
+    left: 5vw;
+    background-color: rgba(255, 255, 255, 0.119);
+    border: 3px solid rgba(255, 255, 255, 0.575);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.p-div1 span{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.p-div2{
+    width: 30vw;
+    padding: 1.5vh 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.08rem;
+    word-spacing: 5px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.674);
+
+    position: absolute;
+    top: 14vh;
+    right: 7vw;
+    background-color: rgba(255, 255, 255, 0.119);
+    border: 3px solid rgba(255, 255, 255, 0.575);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.p-div2 span{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.para-anim{
+    animation: popup1 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes popup1{
+    from{
+        opacity: 0;
+        scale: .4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.cockpit{
+    height: 60vh;
+    display: flex;
+}
+
+.interior{
+    width: 60vw;
+}
+
+.tyre-spoiler{
+    display: flex;
+    flex-direction: column;
 }
