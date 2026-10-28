@@ -320,15 +320,159 @@ body{
 }
 
 .cockpit{
-    height: 60vh;
+    margin-top: 4vh;
+    height: 80vh;
     display: flex;
+
+    animation: facts linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .interior{
     width: 60vw;
+    background-image: url(images/steering-w.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.interior-info{
+    height: 100%; 
+    width: 100%;
+    transform: translateX(-100%);
+    background-color: rgba(0, 0, 0, 0.392);
+    border: 3px solid rgba(255, 255, 255, 0.575);
+    transition: 1.2s ease;
+    color: transparent;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.08rem;
+    word-spacing: 10px;
+    font-weight: bold;
+    padding: 8vh 6vw;
+}
+
+.interior-p1{
+    margin-top: 3vh;
+}
+
+.interior-p2{
+    margin-top: 8vh;
+}
+
+.interior-info p{
+    transition: 3.3s ease;
+}
+
+.interior-info p span{
+    color: transparent;
+    font-size: 1.3rem;
+    transition: 4s ease;
+}
+
+.interior:hover .interior-info{
+    transform: translateX(0);
+}
+
+.interior:hover .interior-info p{
+    color: white;
+}
+
+.interior:hover .interior-info p span{
+    color: red;
 }
 
 .tyre-spoiler{
+    width: 40vw;
     display: flex;
     flex-direction: column;
+}
+
+.tyre{
+    height: 50%;
+    background-image: url(images/tyres.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    position: relative;
+
+}
+
+.spoiler{
+    height: 50%;
+    background-image: url(images/spoilers.jpg);
+    background-size: cover;
+    background-position: 0% 5%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.innerinfo{
+    position: absolute;
+    right:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: rgba(0, 0, 0, 0.392);
+    border: 3px solid rgba(255, 255, 255, 0.575);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.08rem;
+    word-spacing: 10px;
+    font-weight: bold;
+
+    padding: 1vh 6vw;
+    
+    transition: .8s ease;
+
+    opacity: 0;
+}
+
+.innerinfo p{
+    transition: 2.2s ease;
+}
+
+.innerinfo p span{
+    color: transparent;
+    font-size: 1.3rem;
+    transition: 2s ease;
+}
+
+.tyre:hover .info-tyre,
+.spoiler:hover .info-spoiler{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tyre:hover .info-tyre p,
+.spoiler:hover .info-spoiler p{
+    color: white;
+}
+
+.tyre:hover .info-tyre p span,
+.spoiler:hover .info-spoiler p span{
+    color: red;
+}
+
+@keyframes facts {
+    from{
+        opacity: 0;
+        scale:.95;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
