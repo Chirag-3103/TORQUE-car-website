@@ -605,11 +605,15 @@ body{
     margin: 0 auto;
 }
 
+/* | MOBILES |*/
 @media screen and (max-width: 480px) {
 .navbar{
     height: 50vh;
 }
 
+.nav-links{
+    min-height: 3vh;
+}
 .bg-image{
     height: 2vh;
     width: 20vw;
@@ -790,6 +794,223 @@ body{
 .last-logo img{
     height: 1vh;
     width: 20vw;
+}
+
+}
+
+/* | TABLET |*/
+@media (min-width: 481px) and (max-width: 767px){
+
+body{
+    min-height: 10vh;
+    max-width: 100%;
+}
+
+.navbar{
+    height: 60vh;
+    margin-bottom: 3vh;
+}
+
+.nav-links{
+    min-height: 3vh;
+    padding: 1vh 5vw;
+}
+
+.bg-image{
+    height: 2.5vh;
+    width: 15vw;
+}
+
+.menu{
+    font-size: .9rem;
+}
+
+.menu i{
+    font-size: .75rem;
+}
+
+.country,
+.account{
+    font-size: .9rem;
+}
+
+.country i,
+.account i{
+    margin: 6px;
+}
+
+.car-types{
+    min-height: 40vh;
+    gap: 3vw;
+    padding: 0 2vw;
+}
+
+.types{
+    height: 30vh;
+    width: 30vw;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0);
+    border-radius: 16px;
+    transition: .3s ease;    
+
+    position: relative;
+}
+
+.sport-text,
+.ev-text,
+.supercar-text{
+
+    height: max-content;
+    width: max-content;
+    color: white;
+    position: absolute;
+    top: 1.5vh;
+    left: 1vw;
+}
+
+.sport-text h2,
+.ev-text h2,
+.supercar-text h2{
+    font-size: 1.1rem;
+}
+
+.texts1{
+    width: 28vw;
+    padding: 1vh 1vw 2vh 1vw;
+    font-size: .8rem;
+}
+
+.main-title{
+    font-size: 2.1rem;
+    margin-left: 7vw;
+}
+
+.car-pics-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.card{
+    height: 45vh;
+}
+
+.overlay-text-top{
+    padding: 3vh 3vw 1vh 3vw;
+}
+
+.overlay-text-bottom{
+    padding: 3vh 2vw 3.5vh 2vw;
+}
+
+.performance{
+    height: 60vh;
+}
+
+.discover-text{
+    margin: 6vh 0 2.5vh 0;;
+    font-size: 2rem;
+    margin-left: 7vw;
+}
+
+.p-div1{
+    width: 40vw;
+    font-size: .7rem;
+    word-spacing: 3.5px;
+    top: 4vh;
+    left: 3vw;
+}
+
+.p-div1 span{
+    font-size: .72rem;
+}
+
+.p-div2{
+    width: 40vw;
+    font-size: .7rem;
+    word-spacing: 3px;
+    top: 7vh;
+    right: 2vw;
+}
+
+.p-div2 span{
+    font-size: .72rem;
+}
+
+.cockpit{
+    margin-top: 3vh;
+    height: 60vh;
+}
+
+.interior-info{
+    font-size: .75rem;
+    word-spacing: 7px;
+    padding: 3vh 4vw;
+}
+
+.interior-p1{
+    margin-top: 1vh;
+}
+
+.interior-p2{
+    margin-top: .5vh;
+}
+
+.interior-info p span{
+    font-size: .77rem;
+}
+
+.innerinfo{
+    font-size: .65rem;
+    word-spacing: 7px;
+    padding: 1vh 4vw;
+}
+
+.innerinfo p span{
+    font-size: .67rem;
+}
+
+.quick-links{
+    padding: 4vh 5vw;
+    margin: 0 2.5vw;
+    gap: 0vh 8vw;
+}
+
+.link-1{
+    width: max-content;
+    margin: 1vh .9vw;
+    font-size: .9rem;
+    word-spacing: 2px;
+}
+
+.social-links{
+    margin-top: 1vh;
+    gap: 6vw;
+    justify-content: center;
+}
+
+.social-links .link-2{
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+}
+
+.copyrights{
+    margin-top: 4vh;
+    padding: 1vh 5vw;
+    font-size: .45rem;
+}
+
+.last-logo{
+    height: 4vh;
+    margin-top: 2vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.last-logo img{
+    height: 1.4vh;
+    width: 15vw;
 }
 
 }
