@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 110vh;
     max-width: 100%;
 }
 
@@ -124,6 +123,7 @@ body{
     background-color: rgba(128, 128, 128, 0);
     border-radius: 20px;
     padding: 1vh 1vw;
+    
 
 }
 
@@ -603,4 +603,193 @@ body{
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+.navbar{
+    height: 50vh;
+}
+
+.bg-image{
+    height: 2vh;
+    width: 20vw;
+}
+
+.menu{
+    font-size: .75rem;
+    padding: 1.5% 1.9%;
+    border-radius: 8px;
+}
+
+.menu i{
+    font-size: .6rem;
+    padding-right: 1.5vw;
+}
+
+.country,
+.account{
+    font-size: .75rem;
+    border: 1.5px solid rgba(128, 128, 128, 0);
+}
+.country i,
+.account i{
+    margin: 6px;
+}
+
+.text-box1 a{
+    font-size: .75rem;    
+}
+.car-types{
+    flex-direction: column;
+}
+
+.types{
+    height: 30vh;
+    width: 80vw;
+}
+
+.sport-text,
+.ev-text,
+.supercar-text{
+    width: 80vw;
+    top: 1.5vh;
+    left: 3vw;
+}
+
+.main-title{
+    font-size: 1.2rem;
+    margin-left: 5vw;
+}
+
+.car-pics-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.card{
+    height: 30vh;
+}
+
+.overlay-text-top h2,
+.overlay-text-bottom p{
+    font-size: .6rem;
+}
+
+.performance{
+    height: 35vh;
+}
+
+.discover-text{
+    font-size: 1.2rem;
+    margin-left: 6vw;
+}
+
+.p-div1{
+    width: 37vw;
+    padding: 0.9vh .7vw;
+    font-size: 0.34rem;
+    top: 4.5vh;
+    left: 4vw;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    border-radius: 9px;
+}
+
+.p-div1 span{
+    font-size: 0.37rem;
+}
+
+.p-div2{
+    width: 35vw;
+    padding: .9vh .7vw;
+    font-size: .34rem;
+    top: 3.2vh;
+    right: 5vw;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    border-radius: 9px;
+}
+
+.p-div2 span{
+    font-size: .36rem;
+}
+
+.cockpit{
+    margin-top: 1vh;
+    height: 35vh;
+}
+
+.interior-info{
+    font-size: .4rem;
+    word-spacing: 6px;
+    padding: 3vh 3vw;
+}
+
+.interior-p1,
+.interior-p2{
+    margin-top: 1vh;
+}
+
+.interior-info p span{
+    font-size: .45rem;
+}
+
+.tyre-spoiler{
+    width: 40vw;
+}
+
+.innerinfo{
+    font-size: .4rem;
+    word-spacing: 6px;
+    padding: .5vh 2vw;
+}
+.innerinfo p span{
+    font-size: .45rem;
+}
+
+.quick-links{
+    padding: 5vh 3vw;
+    display: flex;
+    margin: 0 3vw;
+    gap: 0vh 20vw;
+}
+.link-1{
+    margin: .4vh .2vw;
+    font-size: .4rem;
+    word-spacing: 2px;
+    padding: .5vh 1.9vw;
+}
+
+.social-links{
+    margin-top: .5vh;
+    gap: 2vw;
+}
+
+.social-links .link-2{
+    padding: .5vh .5vw;
+    font-size: .7rem;
+    border: .5px solid rgba(128, 128, 128, 0);
+}
+
+.link-2:hover{
+    border: .5px solid rgba(128, 128, 128, 0.523);
+}
+
+.copyrights{
+    margin-top: 4vh;
+    padding: 1vh 8vw;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: .25rem;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+.last-logo{
+    height: 3vh;
+    margin-top: 2vh;
+}
+
+.last-logo img{
+    height: 1vh;
+    width: 20vw;
+}
+
 }
